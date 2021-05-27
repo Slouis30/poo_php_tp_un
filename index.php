@@ -20,7 +20,7 @@
             $perso = $_SESSION["perso"];
         }
 
-        $db = new PDO("mysql:host=localhost;dbname=tp_un", "root", "dofusien30");
+        $db = new PDO("mysql:host=localhost;dbname=tp_un", "root", "");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
         $personnageManager = new PersonnageManager($db);
